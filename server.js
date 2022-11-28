@@ -33,7 +33,7 @@ const defaultRoute = require('./routes/default');
 //---------------------------------------ALMACENAMIENTO----------------------------------//
 
 const Contenedor = require('./database/contenedores/knexSQL');
-const { options } = require('./options/sqlite3');
+const { options } = require('./src/utils/sqlite3');
 
 //------------------------------------------SERVIDOR-------------------------------------//
 
@@ -73,7 +73,7 @@ app.use('*', defaultRoute);
 
 //------------------------------------------LOGGER-----------------------------------------//
 
-const { logError, loggerConsole } = require('./controllers/middleware/logger.js');
+const { logError, loggerConsole } = require('./src/utils/logger.js');
 
 //------------------------------------------RUTAS DE SOCKET--------------------------------//
 

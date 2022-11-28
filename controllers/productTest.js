@@ -1,6 +1,6 @@
 const { faker } = require('@faker-js/faker');
 const path = require('path');
-const { loggerConsole } = require('./middleware/logger');
+const { loggerConsole } = require('../src/utils/logger');
 
 const testAPI = (req, res) => {
     const array = [];

@@ -1,5 +1,5 @@
 const path = require('path');
-const { loggerConsole } = require('./middleware/logger')
+const { loggerConsole } = require('../src/utils/logger')
 
 const getHtml = async(req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'login.html'));

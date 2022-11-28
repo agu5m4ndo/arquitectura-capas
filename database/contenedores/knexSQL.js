@@ -1,5 +1,5 @@
 const knex = require('knex');
-const { logError, loggerConsole } = require('../../controllers/middleware/logger');
+const { logError, loggerConsole } = require('../../src/utils/logger');
 class Contenedor {
     constructor(tableName, options) {
         this.tableName = tableName;

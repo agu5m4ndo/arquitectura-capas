@@ -1,6 +1,6 @@
 const path = require('path')
 const { userExists, saveUser } = require('./middleware/validation.js');
-const { loggerConsole } = require('./middleware/logger');
+const { loggerConsole } = require('../src/utils/logger');
 
 const getHtml = (req, res) => {
     loggerConsole.info(`${req.originalUrl} ${req.method}`);

@@ -1,5 +1,5 @@
 const path = require('path');
-const { loggerConsole } = require('./middleware/logger')
+const { loggerConsole } = require('../src/utils/logger')
 
 const logoutView = (req, res) => {
     setTimeout(() => {

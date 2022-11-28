@@ -1,7 +1,7 @@
 const path = require('path')
 const minimist = require('minimist');
 const numCPUs = require('os').cpus().length;
-const { logError, loggerConsole, logWarn } = require('./middleware/logger');
+const { logError, loggerConsole, logWarn } = require('../src/utils/logger');
 
 const getHtml = (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'info.html'));

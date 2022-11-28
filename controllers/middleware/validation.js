@@ -1,5 +1,5 @@
-const mongoose = require('../../options/mongodb'); //Esto llama a la configuración de mongoose y se conecta
-const User = require('../../database/models/user');
+const mongoose = require('../../src/utils/mongodb'); //Esto llama a la configuración de mongoose y se conecta
+const User = require('../../src/models/user');
 const bcrypt = require('bcrypt')
 
 //sirve en login si el usuario no es correcto o en register si el usuario ya existe

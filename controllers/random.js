@@ -1,7 +1,7 @@
 const { fork } = require('child_process')
 const path = require('path')
 const os = require('os').cpus().length;
-const { loggerConsole } = require('./middleware/logger');
+const { loggerConsole } = require('../src/utils/logger');
 
 const generateRandom = (req, res) => {
     console.log('port: ', process.argv[3]);
