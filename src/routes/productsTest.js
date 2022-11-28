@@ -3,7 +3,7 @@ const productosTest = express.Router();
 const testView = express.Router();
 const { testAPI, showView } = require('../controllers/productTest');
 
-const { auth } = require('../controllers/middleware/auth')
+const { auth } = require('../middleware/auth')
 
 productosTest.route('/').get(auth, testAPI);
 testView.route('/').get(auth, showView);

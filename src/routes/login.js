@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { authenticate } = require('../controllers/middleware/passport')
+const { authenticate } = require('../middleware/passport')
 
 const {
     getHtml,

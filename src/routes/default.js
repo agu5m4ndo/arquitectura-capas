@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { logWarn, loggerConsole } = require('../src/utils/logger');
+const { logWarn, loggerConsole } = require('../utils/logger');
 
 router.get('/', (req, res) => {
     logWarn.warn(`${req.originalUrl} ${req.method}`);

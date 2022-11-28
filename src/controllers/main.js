@@ -1,5 +1,5 @@
 const path = require('path');
-const { loggerConsole } = require('../src/utils/logger')
+const { loggerConsole } = require('../utils/logger')
 
 const mainHtml = (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'))

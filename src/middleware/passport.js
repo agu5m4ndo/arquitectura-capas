@@ -1,7 +1,7 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
-const User = require('../../src/models/user');
+const User = require('../models/user');
 const bcrypt = require('bcrypt');
 
 //La idea sería exportar el passport para usarlo dentro del app.use() 

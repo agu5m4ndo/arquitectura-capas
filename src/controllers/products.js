@@ -1,6 +1,6 @@
-const { options } = require('../src/utils/mariadb')
+const { options } = require('../utils/mariadb')
 const knex = require('knex')(options);
-const { loggerConsole, logWarn, logError } = require('../src/utils/logger')
+const { loggerConsole, logWarn, logError } = require('../utils/logger')
 
 //Me permite controlar las tablas
 const Contenedor = require('../database/contenedores/knexSQL');

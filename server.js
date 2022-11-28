@@ -10,29 +10,29 @@ require('dotenv').config();
 
 //------------------------------------------SESSION----------------------------------------//
 
-const session = require('./controllers/middleware/session');
+const session = require('./src/middleware/session');
 const cookieParser = require('cookie-parser');
 
 //------------------------------------------PASSPORT----------------------------------------//
 
-const { passport, localStrategy } = require('./controllers/middleware/passport');
+const { passport, localStrategy } = require('./src/middleware/passport');
 
 //------------------------------------------RUTAS----------------------------------------//
 
-const mainView = require('./routes/mainView.js');
-const productos = require('./routes/products');
-const { productosTest } = require('./routes/productsTest');
-const { testView } = require('./routes/productsTest');
-const login = require('./routes/login');
-const logout = require('./routes/logout');
-const register = require('./routes/register');
-const info = require('./routes/info');
-const random = require('./routes/random');
-const defaultRoute = require('./routes/default');
+const mainView = require('./src/routes/mainView.js');
+const productos = require('./src/routes/products');
+const { productosTest } = require('./src/routes/productsTest');
+const { testView } = require('./src/routes/productsTest');
+const login = require('./src/routes/login');
+const logout = require('./src/routes/logout');
+const register = require('./src/routes/register');
+const info = require('./src/routes/info');
+const random = require('./src/routes/random');
+const defaultRoute = require('./src/routes/default');
 
 //---------------------------------------ALMACENAMIENTO----------------------------------//
 
-const Contenedor = require('./database/contenedores/knexSQL');
+const Contenedor = require('./src/database/contenedores/knexSQL');
 const { options } = require('./src/utils/sqlite3');
 
 //------------------------------------------SERVIDOR-------------------------------------//
